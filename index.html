@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bharadwaj | Image Resize and Compress</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="upload-box">
+        <input type="file" accept="image/*" hidden />
+        <img src="upload.svg" alt="" />
+        <p>
+          Browse File to Upload <br />
+          App by Bharadwaj
+        </p>
+      </div>
+      <div class="content">
+        <div class="row sizes">
+          <div class="column width">
+            <label>Width</label>
+            <input type="number" />
+          </div>
+          <div class="column height">
+            <label>Height</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="row checkboxes">
+          <div class="column ratio">
+            <input type="checkbox" id="ratio" checked />
+            <label for="ratio">Lock aspect ratio</label>
+          </div>
+          <div class="column quality">
+            <input type="checkbox" id="quality" />
+            <label for="quality">Reduce quality</label>
+          </div>
+        </div>
+        <button class="download-btn">Download Image</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
